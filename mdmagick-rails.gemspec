@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["f.sean.kay@gmail.com"]
   gem.description   = "MDMagic for Rails"
   gem.summary       = "Gemified MDMagic"
-  gem.homepage      = "https://github.com/seankay/mdmagic-rails"
+  gem.homepage      = "https://github.com/seankay/mdmagick-rails"
   gem.licenses      = ["MIT"]
 
   gem.files         = Dir["{app,lib,vendor}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
