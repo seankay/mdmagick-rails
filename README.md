@@ -22,7 +22,7 @@ In your `application.css`, include the css file:
 
      *= require mdmagick
 
-In your `application.js`, include the css file:
+In your `application.js`, include the js file:
 
      //= require mdmagick
 
