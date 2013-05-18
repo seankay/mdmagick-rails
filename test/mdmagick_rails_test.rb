@@ -25,15 +25,6 @@ class MDMagickRailsTest < ActionDispatch::IntegrationTest
     assert_mdmagick(response)
   end
 
-  test "javascripts" do
-    get "/assets/mdmagick/a-tools.js"
-    assert_response :success
-    get "/assets/mdmagick/showdown.js"
-    assert_response :success
-    get "/assets/mdmagick.js"
-    assert_response :success
-  end
-
   test "stylesheets contain asset pipeline references to fonts" do
     get "/assets/mdmagick/style.css"
     assert_match "/assets/icomoon.eot",  response.body
