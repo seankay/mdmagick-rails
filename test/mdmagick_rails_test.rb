@@ -21,12 +21,12 @@ class MDMagickRailsTest < ActionDispatch::IntegrationTest
   test "stylesheets" do
     get "/assets/mdmagick.css"
     assert_response :success
-    get "/assets/mdmagick/style.css"
+    get "/assets/mdmagick/mdmagick-style.css"
     assert_mdmagick(response)
   end
 
   test "stylesheets contain asset pipeline references to fonts" do
-    get "/assets/mdmagick/style.css"
+    get "/assets/mdmagick/mdmagick-style.css"
     assert_match "/assets/icomoon.eot",  response.body
     assert_match "/assets/icomoon.eot?#iefix", response.body
     assert_match "/assets/icomoon.woff", response.body
